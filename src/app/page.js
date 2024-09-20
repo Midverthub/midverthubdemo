@@ -1,4 +1,14 @@
 import Image from "next/image";
+import { Inter, Protest_Guerrilla } from "next/font/google";
+
+
+
+
+const protestGuerrilla = Protest_Guerrilla({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+});
 // import "./page.module.css";
 
 export default function Home() {
@@ -7,6 +17,28 @@ export default function Home() {
 
       <div class="marquee">
         <ul class="marquee__content">
+          <li>COMING</li>
+          <li>SOON</li>
+          <li>✦</li>
+
+          <li>COMING</li>
+          <li>SOON</li>
+          <li>✦</li>
+
+          <li>COMING</li>
+          <li>SOON</li>
+          <li>✦</li>
+
+          <li>COMING</li>
+          <li>SOON</li>
+          <li>✦</li>
+
+          <li>COMING</li>
+          <li>SOON</li>
+          <li>✦</li>
+        </ul>
+
+        <ul aria-hidden="true" class="marquee__content">
           <li>COMING</li>
           <li>SOON</li>
           <li>✦</li>
@@ -69,8 +101,10 @@ export default function Home() {
         </div>
 
 
-        <h2> WWW.MIDVERT.COM</h2>
-        <a className="link" href="https://www.instagram.com/midvert.hub?igsh=dWFyem5wb3l5N3N1&utm_source=qr">
+        {/* <h3 className=""> WWW.MIDVERT.COM</h3> */}
+
+
+        <a className={`${protestGuerrilla.className}, link `} href="https://www.instagram.com/midvert.hub?igsh=dWFyem5wb3l5N3N1&utm_source=qr">
           <Image
             className={"icon"}
             src="/assets/instagram-brands-solid.svg"
@@ -128,6 +162,29 @@ export default function Home() {
           <li>SOON</li>
           <li>✦</li>
         </ul>
+
+        <ul aria-hidden="true" class="marquee__content">
+          <li>COMING</li>
+          <li>SOON</li>
+          <li>✦</li>
+
+          <li>COMING</li>
+          <li>SOON</li>
+          <li>✦</li>
+
+          <li>COMING</li>
+          <li>SOON</li>
+          <li>✦</li>
+
+          <li>COMING</li>
+          <li>SOON</li>
+          <li>✦</li>
+
+          <li>COMING</li>
+          <li>SOON</li>
+          <li>✦</li>
+        </ul>
+
       </div>
 
     </div>
